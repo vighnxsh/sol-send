@@ -11,7 +11,7 @@ const Home: NextPage = (props) => {
   return (
     <div className={styles.App}>
       <Head>
-        <title>Wallet-Adapter Example</title>
+        <title>Send SOL</title>
         <meta
           name="Send SOL"
           content="Send SOL on Solana Devnet"
