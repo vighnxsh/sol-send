@@ -1,13 +1,80 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.title{
+  font-size: 2rem;
+  font-weight: 700;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(140, 255, 240), rgb(247, 162, 238));
+   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(140, 255, 240);
+ 
+  
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.balance{
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(247, 162, 238);
+  font-weight: 800;
+  font-style: italic;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  &:active{
+    transform: scale(0.98);
+  }
+}
+
+
+
+.send-button{
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  &:hover{
+    background-color: #111;
+  }
+  &:active{
+    transform: scale(0.98);
+  }
 }

@@ -19,6 +19,7 @@ const Home: NextPage = (props) => {
       </Head>
       <WalletContextProvider>
         <AppBar />
+        <h1 className='title '>Transfer Sol on Devnet</h1>
         <div className={styles.AppBody}>
           <BalanceDisplay />
           <SendSolForm />

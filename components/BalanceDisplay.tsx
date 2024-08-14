@@ -25,7 +25,7 @@ export const BalanceDisplay: FC = () => {
     }, [connection, publicKey])
 
     return (
-        <div>
+        <div className='balance'>
             <p>{publicKey ? `Balance: ${balance / LAMPORTS_PER_SOL}` : ''}</p>
         </div>
     )
