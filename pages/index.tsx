@@ -13,8 +13,8 @@ const Home: NextPage = (props) => {
       <Head>
         <title>Wallet-Adapter Example</title>
         <meta
-          name="description"
-          content="Wallet-Adapter Example"
+          name="Send SOL"
+          content="Send SOL on Solana Devnet"
         />
       </Head>
       <WalletContextProvider>
